@@ -1,3 +1,5 @@
+// Q3 develop a program that transpose the matrix
+
 #include<stdio.h>
 
 int main()
@@ -32,4 +34,5 @@ int main()
         printf("\n");
     }
     return 0;
+
 }

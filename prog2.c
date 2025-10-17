@@ -6,20 +6,29 @@
 int main()
 {
 
-    int i,j,a[3][3],max;
+    int i, j, row, col,max;
+
+    printf("Enter the row size :");
+    scanf("%d", &row);
+
+    printf("Enter the column size :");
+    scanf("%d", &col);
+
+    int a[row][col];
+
     printf("\nEnter Value of Array A\n");
-    for (i = 0; i < 3; i++)
+    for (i = 0; i < row; i++)
     {
-        for ( j = 0; j < 3; j++)
+        for ( j = 0; j < col; j++)
         {
             printf("Array a[%d][%d] ",i,j);
             scanf("%d", &a[i][j]);
         }
     }
     max = a[0][0];
-    for (i = 0; i < 3; i++)
+    for (i = 0; i < row; i++)
     {
-        for ( j = 0; j < 3; j++)
+        for ( j = 0; j < col; j++)
         {
             if (a[i][j] > max)
             {
@@ -28,6 +37,6 @@ int main()
         }
     }
     printf("\nThe max value : %d\n",max);
-
+    
     return 0;
 }
